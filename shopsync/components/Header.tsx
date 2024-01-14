@@ -79,6 +79,23 @@ function Header({}: Props) {
           <button className="border-2 border-blue-600 px-5 md:px-10 py-2 text-blue-600 hover:bg-blue-600/50 hover:text-white cursor-pointer rounded-sm">List Item</button>
         </Link>
       </section>
+
+      <hr/>
+
+      <section className="flex p-3 space-x-6 text-xs md:text-sm whitespace-nowrap justify-center px-6">
+        <p className="link">Home</p>
+        <p className="link">Electronic</p>
+        <p className="link">Computers</p>
+        <p className="link hidden sm:inline">Video Games</p>
+        <p className="link hidden sm:inline">Home & Garden</p>
+        <p className="link hidden md:inline">Health & Beauty</p>
+        <p className="link hidden lg:inline">Collectibles and Art</p>
+        <p className="link hidden lg:inline">Books</p>
+        <p className="link hidden lg:inline">Music</p>
+        <p className="link hidden xl:inline">Deals</p>
+        <p className="link hidden xl:inline">Other</p>
+        <p className="link ">More</p>
+      </section>
     </div>
   );
 }
