@@ -1,2 +1,7 @@
 # ShopSync
-TypeScript, React.js, Tailwind CSS, Thirdweb, Portfolio
+A shopping website with listing and auction.
+
+## tech stack 
+-- TypeScript
+-- React.js
+-- Tailwind CSS
