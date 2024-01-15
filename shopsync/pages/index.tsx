@@ -16,7 +16,7 @@ export default function Home() {
             Loading listings...
           </p>
         ) : (
-          <p className='text-center'>
+          <p className='text-center card'>
             Loaded
           </p>
         )}
