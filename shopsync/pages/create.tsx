@@ -1,4 +1,5 @@
 import Header from '@/components/Header'
+import router from 'next/router';
 import React, { FormEvent, useState } from 'react'
 
 type Props = {}
@@ -7,7 +8,7 @@ function Create({}: Props) {
     const [selectedNft, setSelectNft] = useState<string>();
 
     const handleCreateListing = async (e:FormEvent<HTMLFormElement>) => {
-        
+        router.push("/");
     }
   return (
     <div>
