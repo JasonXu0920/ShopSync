@@ -1,11 +1,14 @@
 import Header from "@/components/Header";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { FormEvent } from "react";
 
 function ListingPage(){
     const router = useRouter();
     const listingId = 1;
+    const handleMakeOffer = async (e:any) => {
+        router.push("/");
+    }
     return(
         <div>
             <Header />
@@ -31,7 +34,13 @@ function ListingPage(){
                         <p className="font-bold">Buy it Now Price:</p>
                         <p className="text-4xl font-bold">0.005 MATIC</p>
 
-                        <button className="col-start-2 mt-2 bg-blue-600 font-bold text-white rounded-full w-44 py-4 px-10">Buy Now</button>
+                        <button onClick={handleMakeOffer} className="col-start-2 mt-2 bg-blue-600 font-bold text-white rounded-full w-44 py-4 px-10">Buy Now</button>
+                    </div>
+                    <div className="grid grid-cols-2 items-center py-2">
+                        <p className="font-bold">Make an Offer</p>
+                        <input type="text" placeholder="Your price" className="text-2xl text-gray-400 border rounded-sm "></input>
+
+                        <button onClick={handleMakeOffer} className="col-start-2 mt-2 bg-red-600 font-bold text-white rounded-full w-44 py-4 px-10">Offer</button>
                     </div>
                 </section>
             </main>
